@@ -234,6 +234,9 @@ export async function validateConfig(config: Configuration, debugLogger: DebugLo
         debugLogger.add("invalidConfig", safeStringifyJson(error))
       }
 
+      console.log('scheme: ' + JSON.stringify(schemeDataPromise.value));
+      console.log('config: ' + JSON.stringify(config));
+
       const site = "https://www.electron.build"
       let url = `${site}/configuration/configuration`
       const targets = new Set(["mac", "dmg", "pkg", "mas", "win", "nsis", "appx", "linux", "appimage", "snap"])
