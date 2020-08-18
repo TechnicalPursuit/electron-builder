@@ -317,8 +317,7 @@ async function validateConfig(config, debugLogger) {
         debugLogger.add("invalidConfig", (0, _builderUtil().safeStringifyJson)(error));
       }
 
-      console.log('scheme: ' + JSON.stringify(schemeDataPromise.value));
-      console.log('config: ' + JSON.stringify(config));
+      debugger;
       const site = "https://www.electron.build";
       let url = `${site}/configuration/configuration`;
       const targets = new Set(["mac", "dmg", "pkg", "mas", "win", "nsis", "appx", "linux", "appimage", "snap"]);
