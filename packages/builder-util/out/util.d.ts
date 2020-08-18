@@ -1,3 +1,4 @@
+/// <reference types="node" />
 import { ChildProcess, ExecFileOptions, SpawnOptions } from "child_process";
 import _debug from "debug";
 export { safeStringifyJson } from "builder-util-runtime";

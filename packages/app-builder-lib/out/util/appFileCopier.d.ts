@@ -1,3 +1,4 @@
+/// <reference types="node" />
 import { FileTransformer } from "builder-util/out/fs";
 import { Stats } from "fs-extra";
 import { FileMatcher } from "../fileMatcher";

@@ -19,6 +19,7 @@ interface SignOptions extends BaseSignOptions {
   'provisioning-profile'?: string;
   'requirements'?: string;
   'signature-size'?: number;
+  'strict-verify'?: boolean;
   type?: string;
   version?: string;
 }
