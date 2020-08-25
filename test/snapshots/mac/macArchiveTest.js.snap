@@ -104,7 +104,7 @@ Object {
 exports[`invalid target 1`] = `
 "Invalid configuration object. electron-builder <appVersion> has been initialized using a configuration object that does not match the API schema.
  - configuration.mac should be one of these:
-   object { appId?, artifactName?, asar?, asarUnpack?, binaries?, bundleShortVersion?, bundleVersion?, category?, compression?, cscInstallerKeyPassword?, cscInstallerLink?, cscKeyPassword?, cscLink?, darkModeSupport?, detectUpdateChannel?, electronLanguages?, electronUpdaterCompatibility?, entitlements?, entitlementsInherit?, extendInfo?, extraDistFiles?, extraFiles?, extraResources?, fileAssociations?, files?, forceCodeSigning?, gatekeeperAssess?, generateUpdatesFilesForAllChannels?, hardenedRuntime?, helperBundleId?, helperEHBundleId?, helperGPUBundleId?, helperNPBundleId?, helperPluginBundleId?, helperRendererBundleId?, icon?, identity?, minimumSystemVersion?, protocols?, provisioningProfile?, publish?, releaseInfo?, requirements?, target?, type? } | null
+   object { appId?, artifactName?, asar?, asarUnpack?, binaries?, bundleShortVersion?, bundleVersion?, category?, compression?, cscInstallerKeyPassword?, cscInstallerLink?, cscKeyPassword?, cscLink?, darkModeSupport?, detectUpdateChannel?, electronLanguages?, electronUpdaterCompatibility?, entitlements?, entitlementsInherit?, entitlementsLoginHelper?, extendInfo?, extraDistFiles?, extraFiles?, extraResources?, fileAssociations?, files?, forceCodeSigning?, gatekeeperAssess?, generateUpdatesFilesForAllChannels?, hardenedRuntime?, helperBundleId?, helperEHBundleId?, helperGPUBundleId?, helperNPBundleId?, helperPluginBundleId?, helperRendererBundleId?, icon?, identity?, minimumSystemVersion?, protocols?, provisioningProfile?, publish?, releaseInfo?, requirements?, strictVerify?, target?, type? } | null
    -> Options related to how build macOS targets.
    Details:
     * configuration.mac.target[0] should be one of these:
@@ -140,54 +140,6 @@ Object {
 `;
 
 exports[`only zip 2`] = `
-Object {
-  "CFBundleDisplayName": "Test App ßW",
-  "CFBundleExecutable": "Test App ßW",
-  "CFBundleIconFile": "Test App ßW.icns",
-  "CFBundleIdentifier": "org.electron-builder.testApp",
-  "CFBundleInfoDictionaryVersion": "6.0",
-  "CFBundleName": "Test App ßW",
-  "CFBundlePackageType": "APPL",
-  "CFBundleShortVersionString": "1.1.0",
-  "LSApplicationCategoryType": "your.app.category.type",
-  "NSAppTransportSecurity": Object {
-    "NSAllowsLocalNetworking": true,
-    "NSExceptionDomains": Object {
-      "127.0.0.1": Object {
-        "NSIncludesSubdomains": false,
-        "NSTemporaryExceptionAllowsInsecureHTTPLoads": true,
-        "NSTemporaryExceptionAllowsInsecureHTTPSLoads": false,
-        "NSTemporaryExceptionMinimumTLSVersion": "1.0",
-        "NSTemporaryExceptionRequiresForwardSecrecy": false,
-      },
-      "localhost": Object {
-        "NSIncludesSubdomains": false,
-        "NSTemporaryExceptionAllowsInsecureHTTPLoads": true,
-        "NSTemporaryExceptionAllowsInsecureHTTPSLoads": false,
-        "NSTemporaryExceptionMinimumTLSVersion": "1.0",
-        "NSTemporaryExceptionRequiresForwardSecrecy": false,
-      },
-    },
-  },
-  "NSHighResolutionCapable": true,
-  "NSPrincipalClass": "AtomApplication",
-  "NSSupportsAutomaticGraphicsSwitching": true,
-}
-`;
-
-exports[`pkg 1`] = `
-Object {
-  "mac": Array [
-    Object {
-      "arch": "x64",
-      "file": "Test App ßW-1.1.0.pkg",
-      "safeArtifactName": "TestApp-1.1.0.pkg",
-    },
-  ],
-}
-`;
-
-exports[`pkg 2`] = `
 Object {
   "CFBundleDisplayName": "Test App ßW",
   "CFBundleExecutable": "Test App ßW",
