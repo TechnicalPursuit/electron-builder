@@ -11,6 +11,6 @@
     "*.js"
   ],
   "dependencies": {
-    "app-builder-lib": "TechnicalPursuit/electron-builder#head=strict-verify-test&workspace=app-builder-lib"
+    "app-builder-lib": "TechnicalPursuit/electron-builder#head=tpi-patches&workspace=app-builder-lib"
   }
 }

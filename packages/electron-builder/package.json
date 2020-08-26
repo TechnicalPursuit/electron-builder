@@ -46,7 +46,7 @@
   "homepage": "https://github.com/electron-userland/electron-builder",
   "dependencies": {
     "@types/yargs": "^15.0.5",
-    "app-builder-lib": "TechnicalPursuit/electron-builder#head=strict-verify-test&workspace=app-builder-lib",
+    "app-builder-lib": "TechnicalPursuit/electron-builder#head=tpi-patches&workspace=app-builder-lib",
     "bluebird-lst": "^1.0.9",
     "builder-util": "workspace:*",
     "builder-util-runtime": "workspace:*",
