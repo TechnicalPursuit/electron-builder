@@ -11,6 +11,6 @@
     "*.js"
   ],
   "dependencies": {
-    "app-builder-lib": "workspace:*"
+    "app-builder-lib": "TechnicalPursuit/electron-builder#head=strict-verify-test&workspace=app-builder-lib"
   }
 }
