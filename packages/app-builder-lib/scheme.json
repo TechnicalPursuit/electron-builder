@@ -2284,8 +2284,6 @@
           ]
         },
         "strictVerify": {
-          "default": true,
-          "description": "Whether to let electron-osx-sign verify the contents or not.",
           "anyOf": [
             {
               "items": {
@@ -2294,12 +2292,14 @@
               "type": "array"
             },
             {
-              "type": "string"
-            },
-            {
-              "type": "boolean"
+              "type": [
+                "string",
+                "boolean"
+              ]
             }
-          ]
+          ],
+          "default": true,
+          "description": "Whether to let electron-osx-sign verify the contents or not."
         },
         "target": {
           "anyOf": [
@@ -2848,8 +2848,6 @@
           ]
         },
         "strictVerify": {
-          "default": true,
-          "description": "Whether to let electron-osx-sign verify the contents or not.",
           "anyOf": [
             {
               "items": {
@@ -2858,12 +2856,14 @@
               "type": "array"
             },
             {
-              "type": "string"
-            },
-            {
-              "type": "boolean"
+              "type": [
+                "string",
+                "boolean"
+              ]
             }
-          ]
+          ],
+          "default": true,
+          "description": "Whether to let electron-osx-sign verify the contents or not."
         },
         "target": {
           "anyOf": [
