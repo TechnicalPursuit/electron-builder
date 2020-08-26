@@ -130,7 +130,7 @@ export interface MacConfiguration extends PlatformSpecificBuildOptions {
      * Whether to let electron-osx-sign verify the contents or not.
      * @default true
      */
-    readonly strictVerify?: boolean;
+    readonly strictVerify?: Array<string> | string | boolean;
 }
 export interface DmgOptions extends TargetSpecificOptions {
     /**
